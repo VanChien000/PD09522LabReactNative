@@ -1,9 +1,12 @@
-import React from 'react';
-import {Text} from 'react-native';
+import { Text, View } from "react-native"
+import {styles} from './styles'
+import Input from "../../../components/input";
 
-const MyLab3 = () => {
-  const name = 'Maru';
-  return <Text>Day la lab 3</Text>;
-};
+const Lab3 = () => (
+    <View style= {styles.container}>
+        <Text style= {styles.text}> React Native </Text>
+        <Input></Input>
+    </View>
+);
 
-export default MyLab3;
+export default Lab3;

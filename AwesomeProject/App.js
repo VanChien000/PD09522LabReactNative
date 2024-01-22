@@ -2,12 +2,12 @@
 // import { StyleSheet, Text, View } from 'react-native';
 
 import React from 'react';
-import {Text} from 'react-native';
-import MyLab3 from './src/Lab/Lab3';
+import Splash from './src/screen/auth/Splash';
+import SignUp from './src/screen/auth/Sign in';
+import AuthHeader from './components/AuthHeader';
 
 const App = () => {
-  const name = 'Maru';
-  return <MyLab3/>
+  return <AuthHeader/>;
 };
 
 export default App;
