@@ -1,13 +1,30 @@
 import { StyleSheet } from "react-native";
 
-export const styles = StyleSheet.create({
+export const style = StyleSheet.create({
     container: {
-      flex: 1,
-      padding: 24,
-      backgroundColor: 'red',
+        backgroundColor : 'yellow',
+        width : '90%',
+        alignSelf: 'center',
+        marginTop : '20',
+        padding: 15,
     },
-    text: {
-      fontSize: 30,
-      color: '#000',
+    baseText: {
+        fontFamily: 'Cochin',
+        color: 'White',
+        fontSize: 16, 
+        marginTop :10 , 
     },
-  });
+    boldText: {
+        fontWeight: 'bold',
+    },
+    italicText:{
+        fontStyle:'bold',
+    },
+    tipStyle: {
+        borderWidth: 3,
+        borderColor:'black',
+        borderRadius: 10,
+        marginHorizontal:15,
+        marginTop:10,
+    },
+});
