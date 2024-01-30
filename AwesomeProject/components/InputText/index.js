@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {styles} from './styles'
-import { Pressable } from "react-native";
+import { Pressable, Text, TextInput, View } from "react-native";
 
 const Input = ({label, placeholder ,isPassword}) => {
     const[isPasswordVisible, setIsPasswordVisible] = useState(false);
@@ -24,7 +24,7 @@ const Input = ({label, placeholder ,isPassword}) => {
                             source={
                                 isPasswordVisible
                                 ? require('../../src/assets/image/image_eye.png.png')
-                                : require('../../src/assets/image/image_eye.png.png')
+                                : require('../../src/assets/image/eye_closed.png')
                             }
                             />
                         </Pressable>

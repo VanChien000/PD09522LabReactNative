@@ -3,7 +3,7 @@ import {styles} from './styles'
 import { Text, TouchableOpacity } from "react-native";
 
 
-const Button = ({title}) =>{
+const ButtonApp = ({title}) =>{
     const handlePress =()=>{
         console.log("Test event button")
     }
@@ -16,4 +16,4 @@ const Button = ({title}) =>{
         </TouchableOpacity>
     );
 }
-export default Button;
+export default ButtonApp;

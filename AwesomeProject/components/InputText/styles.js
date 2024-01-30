@@ -1,13 +1,15 @@
 import { StyleSheet } from "react-native";
  export const styles = StyleSheet.create({
     container:{
-        marginBottom: 20,
+        marginTop:5,
+        marginBottom: 2,
     },
     label:{
-        marginBottom:8,
+        marginBottom:0,
         color: '#4F63AC',
         fontSize: 41,
         fontWeight: '500',
+        margin:20,
     },
     inputContainer:{
         borderWidth: 1,
@@ -15,6 +17,7 @@ import { StyleSheet } from "react-native";
         borderRadius: 14,
         flexDirection: 'row',
         alignItems: 'center',
+        margin:10,
     },
     input:{
         paddingHorizontal: 16,

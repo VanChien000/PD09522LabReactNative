@@ -1,0 +1,10 @@
+const contacts = [    {key: 'John Doe', phone: '123-456-7890'},
+    {key: 'Jane Doe', phone: '987-654-3210'},
+    {key: 'Jim Smith', phone: '555-555-5555'},   
+    {key: 'Jake White', phone: '111-111-1111'},  
+      {key: 'Jill Black', phone: '222-222-2222'},
+      {key: 'Tom Johnson', phone: '444-444-4444'}, 
+         {key: 'Tim White', phone: '777-777-7777'}, 
+            {key: 'Tamara Smith', phone: '888-888-8888'}, 
+               {key: 'Todd Black', phone: '999-999-9999'},   
+                {key: 'Tom Brown', phone: '101-010-1010'},];

@@ -1,11 +1,11 @@
 import React from "react";
 import {styles} from './styles'
 import { Image, Pressable, Text, View } from "react-native";
-import Button from "../../../../components/Button";
+import ButtonApp from "../../../../components/ButtonApp";
 
 
 
-const Splash=()=>{
+const Splash=({navigation})=>{
     return(
         <View style={styles.container}>
             <Image
@@ -18,8 +18,11 @@ const Splash=()=>{
             <Text style={[styles.title, styles.innerTitle]}>All you need</Text>
             <Text style={styles.title}>Here!</Text>
             </View>
-            <Button title={'Sign Up'}></Button>
-            <Pressable>
+            <ButtonApp 
+            onPress={() => navigation.navigate('SignUp')}
+            title='Sign Up'>
+            </ButtonApp>
+            <Pressable onPress={() => navigation.navigate('SignIn')}>
                 <Text style={styles.footerText}>Sign in</Text>
             </Pressable>
 
