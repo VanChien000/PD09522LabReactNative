@@ -7,20 +7,27 @@ import SignUp from './src/screen/auth/SignUp';
 import AuthHeader from './components/AuthHeader';
 import Lab5 from './src/Lab/Lab5';
 import Lab6 from './src/Lab/Lab6';
+import Lab7 from './src/Lab/Lab7';
+import TopTab from './src/Lab/Lab7/TopMenu';
 import SignIn from './src/screen/auth/SignIn';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const Stack = createNativeStackNavigator();
+// const App = () =>{
+//   return(
+//     <NavigationContainer>
+//       <Stack.Navigator>
+//         <Stack.Screen  name="Splash" component={Splash}/>
+//         <Stack.Screen  name="SignIn" component={SignIn} options={{headerShown:false}}/>
+//         <Stack.Screen  name="SignUp" component={SignUp} options={{headerShown:false}}/>
+//       </Stack.Navigator>
+//     </NavigationContainer>
+//   );
+// };
 const App = () =>{
-  return(
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen  name="Splash" component={Splash}/>
-        <Stack.Screen  name="SignIn" component={SignIn} options={{headerShown:false}}/>
-        <Stack.Screen  name="SignUp" component={SignUp} options={{headerShown:false}}/>
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
+     return(
+        <TopTab/>
+     );
 };
 export default App;
