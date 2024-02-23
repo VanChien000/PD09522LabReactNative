@@ -1,29 +1,24 @@
 {
   "user": [
     {
-      "name": "Le Nam Anh",
-      "birthday": "01-01-1987",
-      "id": "1"
-    },
-    {
-      "name": "Le Trung Chinh",
-      "birthday": "01-01-1980",
-      "id": "2"
-    },
-    {
-      "id": "d674",
       "name": "Chien",
-      "birthday": "08-10-2004"
+      "birthday": "08-10-20045",
+      "id": "792f"
     },
     {
-      "id": "792f",
-      "name": "Chien",
-      "birthday": "08-10-2004"
+      "name": "Quốc ngu",
+      "birthday": "09-09- 2 0 1 4",
+      "id": "e7fa"
     },
     {
-      "id": "502f",
-      "name": "Chien",
-      "birthday": "08-10-2004"
+      "name": "Mẹo van",
+      "birthday": "01-01-1 9 9 0",
+      "id": "839c"
+    },
+    {
+      "id": "7203",
+      "name": "Thanh",
+      "birthday": "01/01/2004"
     }
   ]
 }

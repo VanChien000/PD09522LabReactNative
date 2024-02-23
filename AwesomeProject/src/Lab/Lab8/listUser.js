@@ -6,7 +6,7 @@ import { useNavigation } from "@react-navigation/native";
 const ListUser = ({navigation}) => {
     const [data, setData] = useState([]);
     const [openDialog, setOpenDialog] = useState(false);
-    const [selecttedUser, setSelecttedUser] = useState(undefined);
+    const [selectedUser, setSelectedUser] = useState(undefined);
 
     const getAPI = async () => {
         const url = 'http://172.16.55.195:3000/user';
@@ -17,9 +17,8 @@ const ListUser = ({navigation}) => {
         }
     };
     const handleDelete = async id => {
-        z
         const url = 'http://172.16.55.195:3000/user';
-        let result = await fetch('${url}/${id}', {
+        let result = await fetch(`${url}/${id}`,{
             method: 'Delete',
         });
         result = await result.json();
@@ -30,7 +29,7 @@ const ListUser = ({navigation}) => {
     const handleUpdate = data => {
         // code sau
         setOpenDialog(true);
-        setSelecttedUser(data);
+        setSelectedUser(data);
         console.log("update");
     };
 
@@ -76,7 +75,7 @@ const ListUser = ({navigation}) => {
             <Modal visible={openDialog} transparent={true}>
                 <UpdateModal
                     setOpenDialog={setOpenDialog}
-                    selecttedUser={selecttedUser}
+                    selecttedUser={selectedUser}
                     getAPI={getAPI}
                 ></UpdateModal>
             </Modal>
@@ -95,7 +94,7 @@ const UpdateModal = props => {
     const updateUser = async () => {
         const url = 'http://172.16.55.195:3000/user';
         const id = props.selecttedUser.id;
-        let result = await fetch('${url}/${id}', {
+        let result = await fetch(`${url}/${id}`, {
             method: 'Put',
             headers: {
                 'Content-Type': 'application/json',
