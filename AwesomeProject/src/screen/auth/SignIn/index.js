@@ -10,7 +10,7 @@ import GoogleLogin from '../../../../components/GoogleLogin';
 
 const SignIn = ({navigation}) => {
     const onSignIn = () => {
-        console.log('Test sign in');
+        navigation.navigate('SignUp');
     };
     const onBack = () =>{
         navigation.goBack();

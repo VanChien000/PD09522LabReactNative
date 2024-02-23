@@ -10,7 +10,7 @@ import GoogleLogin from '../../../../components/GoogleLogin';
 const SignUp = () => {
     const [checked, setCheck] = useState(false);
     const onSignIn = () => {
-        console.log('Test login');
+        navigation.navigate('SignIn');
     };
     return (
         <View style={styles.container}>
@@ -22,7 +22,7 @@ const SignUp = () => {
                 <CheckBox checked={checked} onCheck={setCheck}></CheckBox>
                 <Text style={styles.checkText}> I agree with Terms & Privacy</Text>
             </View>
-            <ButtonOne style={styles.button} title="Sign up"></ButtonOne>
+            <ButtonApp style={styles.button} title="Sign up"></ButtonApp>
             <Seperator text="Or sign up with"></Seperator>
             <GoogleLogin></GoogleLogin>
             <Text style={styles.footerText}>

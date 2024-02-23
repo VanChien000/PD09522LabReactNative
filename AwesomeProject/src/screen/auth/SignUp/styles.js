@@ -2,7 +2,8 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
     container: {
         padding: 24,
-        marginBottom: 20,
+        marginBottom: 50,
+        paddingBottom:30,
 
     },
     checkRow: {
@@ -22,9 +23,10 @@ export const styles = StyleSheet.create({
     },
     footerText:{
         color: '#4F63AC',
-        marginBottom: 56,
+        marginBottom: 70,
         textAlign: 'center',
         marginEnd: 20,   
+        paddingBottom: 40,
     },
     footerLink:{
         fontWeight: 'bold',
