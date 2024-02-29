@@ -9,7 +9,7 @@ import Seperator from '../../../../components/Seperator';
 import GoogleLogin from '../../../../components/GoogleLogin';
 const SignUp = () => {
     const [checked, setCheck] = useState(false);
-    const onSignIn = () => {
+    const onSignUp = () => {
         navigation.navigate('SignIn');
     };
     return (
@@ -27,7 +27,7 @@ const SignUp = () => {
             <GoogleLogin></GoogleLogin>
             <Text style={styles.footerText}>
                 Already have an acount
-                <Text onPress={onSignIn} style={styles.footerLink}>
+                <Text onPress={onSignUp} style={styles.footerLink}>
                     Sign in
                 </Text>
             </Text >

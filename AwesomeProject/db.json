@@ -1,24 +1,19 @@
 {
   "user": [
     {
-      "name": "Chien",
-      "birthday": "08-10-20045",
-      "id": "792f"
+      "name": "Thu",
+      "birthday": "18/02/2000",
+      "id": "f9d6"
     },
     {
-      "name": "Quốc ngu",
-      "birthday": "09-09- 2 0 1 4",
-      "id": "e7fa"
+      "name": "Hai",
+      "birthday": "14/02/2004",
+      "id": "2332"
     },
     {
-      "name": "Mẹo van",
-      "birthday": "01-01-1 9 9 0",
-      "id": "839c"
-    },
-    {
-      "id": "7203",
-      "name": "Thanh",
-      "birthday": "01/01/2004"
+      "name": "My",
+      "birthday": "123",
+      "id": "7fc3"
     }
   ]
 }

@@ -15,10 +15,11 @@ const SignIn = ({navigation}) => {
     const onBack = () =>{
         navigation.goBack();
     };
+    const [email, password] = useState('chien00@gmail.com', 1234);
     return (
         <View style={styles.container}>
             <AuthHeader onBackPress={onBack} title="Sign In" />
-            <Input label="Email" placeholder="example@gmail.com" />
+            <Input label="Email" placeholder="example@gmail.com"/>
             <Input label="Password" placeholder="*********" />
             <ButtonApp style={styles.button} title="Sign In"></ButtonApp>
             <Seperator text="Or sign up with"></Seperator>

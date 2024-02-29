@@ -3,15 +3,15 @@ import {styles} from './styles'
 import { Text, TouchableOpacity } from "react-native";
 
 
-const ButtonApp = ({title}) =>{
+const ButtonApp = ({title,navigation}) =>{
     const handlePress =()=>{
-        console.log("Test event button")
-    }
+        navigation.navigate('Crud');
+        <ButtonApp title={title} navigation={navigation}/>
+    };
     return(
         <TouchableOpacity
         onPress={handlePress}
-        style={styles.container}
-        >
+        style={styles.container}>
            <Text style={styles.textContent}>{title}</Text>
         </TouchableOpacity>
     );

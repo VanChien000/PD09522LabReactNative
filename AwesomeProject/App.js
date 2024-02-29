@@ -8,6 +8,7 @@ import AuthHeader from './components/AuthHeader';
 import Lab5 from './src/Lab/Lab5';
 import Lab6 from './src/Lab/Lab6';
 import Lab7 from './src/Lab/Lab7';
+import Crud from './src/screen/auth/Lab8/CRUD';
 import TopTab from './src/Lab/Lab7/TopMenu';
 import SignIn from './src/screen/auth/SignIn';
 import { NavigationContainer } from '@react-navigation/native';
@@ -17,10 +18,10 @@ import { Image } from 'react-native';
 import Home from './src/screen/app/Home';
 import Profile from './src/screen/app/Profile';
 import Favourites from './src/screen/app/Favourites';
-import Crud from './src/Lab/Lab8/CRUD';
 
-// const Stack = createNativeStackNavigator();
-// const Tab = createBottomTabNavigator();
+
+const Stack = createNativeStackNavigator();
+
 // const Tabs = () => {
 //   <Tab.Navigator
 //     screenOptions={({ route }) => ({
@@ -51,36 +52,30 @@ import Crud from './src/Lab/Lab8/CRUD';
 
 //   </Tab.Navigator >
 // };
-// const App = () => {
-//   const isSignedIn = true;
-//   return (
-//     <NavigationContainer>
-//       <Stack.Navigator>
-
-//         {isSignedIn ? (
-//           <>
-//             <Stack.Screen name='Tabs' component={Tabs} options={{ headerShown: false }} />
-//           </>
-//         ) : (
-//           <>
-//             <Stack.Screen
-//               name="Splash"
-//               component={Splash} />
-//             <Stack.Screen
-//               name="SignIn"
-//               component={SignIn}
-//               options={{ headerShown: false }} />
-//             <Stack.Screen
-//               name="SignUp"
-//               component={SignUp}
-//               options={{ headerShown: false }} />
-//           </Stack.Navigator>
-//     </NavigationContainer>
-//   );
-// };
 const App = () => {
+  const isSignedIn = true;
   return (
-    <Crud />
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Splash"
+          component={Splash} />
+        <Stack.Screen
+          name="SignIn"
+          component={SignIn}
+          options={{ headerShown: false }} />
+        <Stack.Screen
+          name="SignUp"
+          component={SignUp}
+          options={{ headerShown: false }} />
+          <Stack.Screen
+          name="Crud"
+          component={Crud}
+          options={{ headerShown: false }} />
+
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-}
+};
+
 export default App;
